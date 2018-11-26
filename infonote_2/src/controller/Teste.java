@@ -10,8 +10,7 @@ public class Teste {
 		
 		user.mostrar();
 		
-		Endereco  End1 = new Endereco("rua santa sofia","452","apt 413","Tijca","Rj","RJ");
-		
+	
 		Usuario Usu = new Usuario();
 		Usu.setMatricula(1069);
 		Usu.setLogin("Limam2");
@@ -21,6 +20,10 @@ public class Teste {
 		Usu.setTelefone("23257777");
 		//System.out.println(Usu.toString());
 		Usu.mostrar();
+		
+		Endereco End1 = new Endereco("rua santa sofia","452","apt 413","Tijca","Rj","RJ", null);
+		
+		
 		
 		Endereco End = new Endereco();
 		End.setLogradouro(" R. Santos Rodrigues");
