@@ -2,9 +2,15 @@ package controller;
 
 import model.*;
 
-public class teste {
+public class Teste {
 	 
 	public static void main(String[] args) {
+		
+		Usuario user = new Usuario(1, "joseph", "climber", "Joseph Climber","josephclimber@gmail.com","2222-3344");
+		
+		user.mostrar();
+		
+		Endereco  End1 = new Endereco("rua santa sofia","452","apt 413","Tijca","Rj","RJ");
 		
 		Usuario Usu = new Usuario();
 		Usu.setMatricula(1069);
@@ -13,7 +19,8 @@ public class teste {
 		Usu.setNome("Marcos lima");
 		Usu.setEmail("marcos_lima@hotmail");
 		Usu.setTelefone("23257777");
-		System.out.println(Usu.toString());
+		//System.out.println(Usu.toString());
+		Usu.mostrar();
 		
 		Endereco End = new Endereco();
 		End.setLogradouro(" R. Santos Rodrigues");
@@ -23,7 +30,7 @@ public class teste {
 		End.setCidade("Rio de Janeiro");
 		End.setEstado("RJ");
 		End.setCep("20250430");
-		System.out.println(End.toString());
+		//System.out.println(End.toString());
 		
 				
 		Pedido Ped = new Pedido();
@@ -31,17 +38,17 @@ public class teste {
 		Ped.setFormaDePagamento("A vista");
 		Ped.setValorTotal(5000.00);
 		Ped.setSituacao("Ativo");
-		System.out.println(Ped.toString());
+		//System.out.println(Ped.toString());
 		
-		ItemdePedido Idp1 = new ItemdePedido();
+		ItemDePedido Idp1 = new ItemDePedido();
 		Idp1.setQtde (2);
 		Idp1.setSubtotal(22.98);
-		System.out.println(Idp1.toString());
+		//System.out.println(Idp1.toString());
 		
-		ItemdePedido Idp2 = new ItemdePedido();
+		ItemDePedido Idp2 = new ItemDePedido();
 		Idp1.setQtde (1);
 		Idp1.setSubtotal(98.75);
-		System.out.println(Idp2.toString());
+		//System.out.println(Idp2.toString());
 		
 		
 		Notebook Note1 = new Notebook();
@@ -52,7 +59,7 @@ public class teste {
 		Note1.setPrecoUnitario(4200.00);
 		Note1.setFigura("figura");
 		Note1.setDataCadastro("01012018");
-		System.out.println(Note1.toString());
+		//System.out.println(Note1.toString());
 		
 		Notebook Note2 = new Notebook();
 		Note2.setNumeroNote(20250123);
@@ -62,7 +69,7 @@ public class teste {
 		Note2.setPrecoUnitario(4200.00);
 		Note2.setFigura("figura");
 		Note2.setDataCadastro("01012018");
-		System.out.println(Note2.toString());
+		//System.out.println(Note2.toString());
 		
 		Notebook Note3 = new Notebook();
 		Note3.setNumeroNote(20250124);
@@ -72,8 +79,8 @@ public class teste {
 		Note3.setPrecoUnitario(4200.00);
 		Note3.setFigura("figura");
 		Note3.setDataCadastro("01012018");
-		System.out.println(Note3.toString());
-		
+		//System.out.println(Note3.toString());
+		//
 					
 	}
 }
