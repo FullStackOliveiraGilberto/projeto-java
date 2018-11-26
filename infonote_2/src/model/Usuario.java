@@ -9,6 +9,9 @@ public class Usuario {
 	public String email;
 	public String telefone;
 	
+
+
+
 	public void mostrar(){
 		
 		//Mostrar usuário
@@ -21,6 +24,17 @@ public class Usuario {
 		System.out.println("Telefone: " + this.telefone);
 		}
 	
+	
+	public Usuario(int matricula, String login, String senha, String nome, String email, String telefone) {
+		super();
+		this.matricula = matricula;
+		this.login = login;
+		this.senha = senha;
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+	}
+	
 	// Construtor padrão de Classe.
 	// Objeto vazio para o momento que o usuário ainda não cadastrou dados.
 	public Usuario(){
@@ -29,16 +43,7 @@ public class Usuario {
 	//Toda classe java é sub classe da classe Object.
 	}
 
-	// Construtor com atributos da Classe. Será utilizado para o usuário efetuar o cadastro.
-	public Usuario(int matricula, String login, String senha, String nome, String email, String telefone){
-	super();
-	this.matricula = matricula;
-	this.login = login;
-	this.senha = senha;
-	this.nome = nome;
-	this.email = email;
-	this.telefone = telefone;
-	}
+
 	
 	public int getMatricula() {
 		return matricula;

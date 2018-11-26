@@ -9,6 +9,22 @@ public class Notebook {
 	public double precoUnitario;
 	public String figura;
 	public String dataCadastro;
+	
+	
+	public void mostrar(){
+		
+		//Mostrar notebook
+		System.out.println("\n\nNoteBook:\n");
+		System.out.println("Numero Note: " + this.numeroNote);
+		System.out.println("Modelo: " + this.modelo);
+		System.out.println("Descricao: " + this.descricao);
+		System.out.println("Estoque: " + this.estoque);
+		System.out.println("Preco Unitario: " + this.precoUnitario);
+		System.out.println("Figura: " + this.figura);
+		System.out.println("Data Cadastro: " + this.dataCadastro);
+		
+		}
+	
 
 	public Notebook(int numeroNote, String modelo, String descricao, int estoque, double precoUnitario, String figura,
 			String dataCadastro) {
@@ -21,6 +37,13 @@ public class Notebook {
 		this.figura = figura;
 		this.dataCadastro = dataCadastro;
 	}
+	
+	public Notebook(){
+		super();
+		//super faz referência à super classe.
+		//Toda classe java é sub classe da classe Object.
+		}
+
 
 	public int getNumeroNote() {
 		return numeroNote;

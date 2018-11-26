@@ -10,6 +10,19 @@ public class Pedido {
 	public String situacao;
 	
 	
+	
+	public void mostrar(){
+		
+		//Mostrar pedido
+		System.out.println("\n\nPedido:\n");
+		System.out.println("Data Emissao: " + this.dataEmissao);
+		System.out.println("Forma DePagamento: " + this.formaDePagamento);
+		System.out.println("Valor Total: " + this.valorTotal);
+		System.out.println("situacao: " + this.situacao);
+		
+		}
+	
+	
 	public int numero;
 	public Pedido(int numero, String dataEmissao, String formaDePagamento, double valorTotal, String situacao) {
 		super();
@@ -26,6 +39,7 @@ public class Pedido {
 		//super faz referência à super classe.
 		//Toda classe java é sub classe da classe Object.
 		}
+	
 
 	public int getNumero() {
 		return numero;

@@ -11,6 +11,23 @@ public class Endereco {
 	public String estado;
 	public String cep;
 	
+	
+public void mostrar(){
+		
+		//Mostrar endereço
+		System.out.println("\n\nEndereço:\n");
+		System.out.println("logradouro: " + this.logradouro);
+		System.out.println("numero: " + this.numero);
+		System.out.println("complemento: " + this.complemento);
+		System.out.println("bairro: " + this.bairro);
+		System.out.println("cidade: " + this.cidade);
+		System.out.println("estado: " + this.estado);
+		System.out.println("cep: " + this.cep);
+		
+		}
+	
+	
+
 	public Endereco(String logradouro, String numero, String complemento, String bairro, String cidade, String estado,String cep) {
 		super();
 		this.logradouro = logradouro;
@@ -21,6 +38,13 @@ public class Endereco {
 		this.estado = estado;
 		this.cep = cep;
 	}
+	
+	public Endereco(){
+		super();
+		//super faz referência à super classe.
+		//Toda classe java é sub classe da classe Object.
+	}
+
 
 
 	@Override
